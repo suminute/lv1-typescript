@@ -26,6 +26,7 @@ const Button = ({ type = "button", children, styleType, disabled, onClick }: But
 export default Button;
 
 const buttonStyles = css`
+  cursor: pointer;
   width: 90px;
   padding: 10px;
   margin: 5px;

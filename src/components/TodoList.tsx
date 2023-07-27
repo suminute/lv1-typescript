@@ -2,7 +2,7 @@ import { styled } from "styled-components";
 import Button, { StyleType } from "./Button";
 import { Todo } from "./Main";
 
-const TodoList = ({ todos, isDone, setTodos }: { todos: Todo[]; isDone: boolean; setTodos: any }) => {
+const TodoList = ({ todos, isDone, setTodos }: { todos: Todo[]; isDone: boolean; setTodos: React.Dispatch<React.SetStateAction<Todo[]>> }) => {
   const deleteHandler = (id: string) => {
     const deletedTodos = todos.filter((todo) => todo.id !== id);
     setTodos(deletedTodos);
